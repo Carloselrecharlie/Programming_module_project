@@ -29,3 +29,22 @@ of Iris flowers:
   * If the Iris flower has a short sepal (4.5-5.5cm), short petals(1-2cm) and very narrow petals (.1-.5cm) then the Iris is most likely an Iris-Setosa. 
   * Any Iris flower that falls in between these two classifications is most likely an Iris-Versicolor.
 They also make a Java script to get statistical parameters like mean, mode, median, range, variance, standard deviation, minimum value and maximum values.
+=======
+Final project about the popular Iris flower data set for the Programming and Scripting module
+
+Based on the combination of the four features shown in the set, Fisher developed a linear discriminant model to distinguish the species from each other.
+
+Statistical Analysis http://patrickhoey.com/downloads/Computer_Science/03_Patrick_Hoey_Data_Visualization_Dataset_paper.pdf
+The goal a this discriminant analysis like this is to produce a simple function that, given the four measurements, will
+classify a flower correctly. This is the beginning of creating “predictors” in order to try to make a more educated guess 
+on a record in a dataset.
+
+matplotlib.pyplot and plots http://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html
+
+video scikit-learn https://www.youtube.com/watch?v=hd1W4CyPX58
+
+Basic Analysis of the Iris Data set Using Python https://medium.com/codebagng/basic-analysis-of-the-iris-data-set-using-python-2995618a6342 
+
+Python - IRIS Data visualization and explanation https://www.kaggle.com/abhishekkrg/python-iris-data-visualization-and-explanation 
+
+Iris Data Set, Machine learning,  Install SciPy Libraries https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
