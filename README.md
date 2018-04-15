@@ -13,8 +13,8 @@ The articles consulted for this project are:
 
 1. **Basic Analysis of the Iris Data set Using Python** https://medium.com/codebagng/basic-analysis-of-the-iris-data-set-using-python-2995618a6342 
 In this research, they load and then explore the data with *pandas* using both descriptive statistics and data visualization. After a quick checkout of the data they take boxplots and histograms. Then, through scatterplots they find a diagonal relationship of some pair of attributes, which suggests a high correltaion and a predictable relationship. Then they create a validation set for this dataset by splitting the data into two:
-  * 80% to train their models 
-  * 20% held back as a dataset
+    * 80% to train their models 
+    * 20% held back as a dataset
 
 Then they use 10-fold cross validation to estimate accuracy. To evaluate models the ratio of the number of correctly predicted instances in is divided by the total number of instances in the dataset multiplied by 100 to give a percentage (f.i. 97% of accuracy).
 
@@ -29,7 +29,20 @@ of Iris flowers:
   * If the Iris flower has a short sepal (4.5-5.5cm), short petals(1-2cm) and very narrow petals (.1-.5cm) then the Iris is most likely an Iris-Setosa. 
   * Any Iris flower that falls in between these two classifications is most likely an Iris-Versicolor.
 They also make a Java script to get statistical parameters like mean, mode, median, range, variance, standard deviation, minimum value and maximum values.
+
+3. **Python Data Visualizations**
+https://www.kaggle.com/uciml/iris
+
+Using 3 libraries in the study (pandas, matplotlib and seaborn) they do things like joinning and summarizing two graphs into a single violin plot, which combines the benefits of a box plot with a layer of spots that shows every measurement. Denser regions of the data are fatter, and sparser thiner in a violin plot
+
+![violin plot](https://is.gd/hPRniJ)
+
+With another useful seaborn plot, the pairplot, they show the bivariate relation between each pair of features and also that the Iris-setosa species is separataed from the other two across all feature combinations
+
+![pairplot](https://www.kaggleusercontent.com/kf/1465139/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..sNe6aSvByOHL5SBvF8NIrQ.WRSoJuCYU9Hj0vaaCP35SSfuheFhxCwpqGVDvxekugIsSE9eI4-ESKS68y7k_ohM_o0Oje3yy-42rvFZUm8_zHGHAl1PROXE9H-RAzXV_DpUvGYBpqxy4VC08L-gyXzS.AAqT4vBnvc8zcb-wvmpCSw/__results___files/__results___10_1.png)
+
 =======
+
 Final project about the popular Iris flower data set for the Programming and Scripting module
 
 Based on the combination of the four features shown in the set, Fisher developed a linear discriminant model to distinguish the species from each other.
