@@ -24,6 +24,8 @@ with open('data/iris.csv', newline='') as csvFile:
     d = float (line.split()[3])
 
     print(line[:3]+ '      ' + line[4:7]+ '      ' + line[8:11]+ '      ' + line[12:15]) 
+    # This line prints in groups of 3 positions because the 4th value is not included. 
+    # F.i. the first instruction prints the positions 0, 1st and 2nd but 3rd position (the white space) is excluded
 
     A = a + A # update the value of the column summatory 
     B = b + B

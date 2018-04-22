@@ -3,7 +3,7 @@ Final project about the popular Iris flower data set for the Programming and Scr
 
 This data set also known as *Fisher's Iris data set* is a multivariate data set introduced by the British statistician and biologist **Ronald Fisher** in his 1936 paper *The use of multiple measurements in taxonomic problems* as an example of linear discriminant analysis. It is sometimes called *Anderson's Iris data set* because Edgar Anderson collected the data to quantify the morphologic variation of Iris flowers of three related species. Two out of the three species were collected in the Gaspé Peninsula "all from the same pasture, and picked on the same day and measured at the same time by the same person with the same apparatus".
 
-![Iris images](/images/flowers.jpeg)
+![Iris images](/images/flower.jpeg)
 
 The data set consists of 50 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). Four features were measured from each sample: the length and the width of the sepals and petals, in centimetres. Based on the combination of these four features, Fisher developed a linear discriminant model to distinguish the species from each other.
 
@@ -35,11 +35,11 @@ https://www.kaggle.com/uciml/iris
 
 Using 3 libraries in the study (pandas, matplotlib and seaborn) they do things like joinning and summarizing two graphs into a single violin plot, which combines the benefits of a box plot with a layer of spots that shows every measurement. Denser regions of the data are fatter, and sparser thiner in a violin plot
 
-![violin plot](https://is.gd/hPRniJ)
+![violin plot](/images/violinPlot.png)
 
 With another useful seaborn plot, the pairplot, they show the bivariate relation between each pair of features and also that the Iris-setosa species is separataed from the other two across all feature combinations
 
-![pairplot](https://www.kaggleusercontent.com/kf/1465139/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..sNe6aSvByOHL5SBvF8NIrQ.WRSoJuCYU9Hj0vaaCP35SSfuheFhxCwpqGVDvxekugIsSE9eI4-ESKS68y7k_ohM_o0Oje3yy-42rvFZUm8_zHGHAl1PROXE9H-RAzXV_DpUvGYBpqxy4VC08L-gyXzS.AAqT4vBnvc8zcb-wvmpCSw/__results___files/__results___10_1.png)
+![pairplot](pairplot.png)
 
 =======
 
