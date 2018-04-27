@@ -9,7 +9,7 @@ import matplotlib.pyplot as mpl
 data = numpy.genfromtxt('data/iris.csv', delimiter = ',')
 
 col1 = data[0:50,0]
-mpl.hist(col1)
+mpl.violinplot(col1)
 mpl.show()
 
 col2 = data[:,1]
