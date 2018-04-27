@@ -7,23 +7,24 @@ This data set also known as *Fisher's Iris data set* is a multivariate data set 
 
 The data set consists of 50 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). Four features were measured from each sample: the length and the width of the sepals and petals, in centimetres. Based on the combination of these four features, Fisher developed a linear discriminant model to distinguish the species from each other.
 
-A link with more detailed info about this prominent data set can be found at the end of this readme in References
+A link with more detailed info about this prominent data set can be found at the end of this readme in References.
 
 ## Content
 ```
-This repository contains my first proper data analytics experience. Before anything else I researched for other articles that describe the mentioned data set and this meant my starting point. Some of this information was not harnessed for the level difference but still it gave ideas and also some knowledge. Shortly, I will include comments from a few of these articles.
+This repository contains my first proper data analytics experience. Before anything else I researched for other articles that describe the mentioned data set and this meant my starting point. Some of this information was not harnessed for the level difference but still it gave me ideas and also some knowledge. Shortly, I will include comments from a few of these articles.
 
 There also are three python files:
-* _data&param.py_ shows the measures contained in the csv file, which can be found in the *data* folder of this repository. I aimed to dislay it in a clear way and then, there is the code that outputs some statistical parameters that represent the whole file on one hand, and each of the three flower classes separately on the other hand.
 
-* _plots.py_ code which produced my plots.
+* data&param.py shows the measures contained in the csv file, which can be found in the *data* folder of this repository. I aimed to dislay it in a clear way and then, there is the code that outputs some statistical parameters that represent the whole file on one hand, and each of the three flower classes separately on the other hand.
 
-* _mean.py_ short script where I calculated the mean myself
+* plots.py code which produced my plots.
+
+* mean.py short script where I calculated the mean 
 ```
 
 ## Articles
 
-1. **Basic Analysis of the Iris Data set Using Python**  
+**1. Basic Analysis of the Iris Data set Using Python**  
 In this research, they load and then explore the data with *pandas* using both descriptive statistics and data visualization. After a quick checkout of the data they take boxplots and histograms. Then, through scatterplots they find a diagonal relationship of some pair of attributes, which suggests a high correltaion and a predictable relationship. Then they create a validation set for this dataset by splitting the data into two:
     * 80% to train their models 
     * 20% held back as a dataset
@@ -34,7 +35,7 @@ After that they test some linear and non-linear algorithms to know which one is 
 
 The accuracy is 90%. The confusion matrix provides an indication of the three errors made. Finally, the classification report provides a breakdown of each class by precision showing excellent results (granted the validation dataset was small).
 
-2. **Statistical Analysis of the Iris Flower Dataset** 
+**2. Statistical Analysis of the Iris Flower Dataset** 
 This study uses two approches, scatterplot graphs and programming to find patterns and draw some conclusions. For the graphs it compares every numerical variable with every classification of flower, giving a different color to each of the three flower classes. This way it is easy to sort the flower varieties from shorter to longer measurements and then, build a predictor for a particular classification
 of Iris flowers:
   * If the Iris flower has a long sepal (6-8cm), long petals (5-7cm) and wide petals (1.5-2.5cm) then the Iris is most likely an Iris-Virginica. 
@@ -42,15 +43,15 @@ of Iris flowers:
   * Any Iris flower that falls in between these two classifications is most likely an Iris-Versicolor.
 They also make a Java script to get statistical parameters like mean, mode, median, range, variance, standard deviation, minimum value and maximum values.
 
-3. **Python Data Visualizations**
+**3. Python Data Visualizations**
 
 Using 3 libraries in the study (pandas, matplotlib and seaborn) they do things like joinning and summarizing two graphs into a single violin plot, which combines the benefits of a box plot with a layer of spots that shows every measurement. Denser regions of the data are fatter, and sparser thiner in a violin plot
 
-<img align="left" width="150" height="170" src="https://www.kaggleusercontent.com/kf/1465139/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..hN1dJPs-yESHkGlTW8nEGw.WrefkhnZ618zR_WUFQXrKhSwOYFjohjI91Odpha8o61xMDX-itDqR_84P9Ej4A-FRBkfLwxgACNz0mezSEu4dozIV8xcdqA2EvRv1vRhxleLUwKS9IesTtJdP7m3AICA.xZd2d2h1wLSMdmrF4yJQKQ/__results___files/__results___8_1.png">
+![violinplot](\images\violinPlot.png)[width="150" height="170"]
 
 With another useful seaborn plot, the pairplot, they show the bivariate relation between each pair of features and also that the Iris-setosa species is separataed from the other two across all feature combinations
 
-<img align="center" width="400" height="300" src="https://www.kaggleusercontent.com/kf/1465139/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..hN1dJPs-yESHkGlTW8nEGw.WrefkhnZ618zR_WUFQXrKhSwOYFjohjI91Odpha8o61xMDX-itDqR_84P9Ej4A-FRBkfLwxgACNz0mezSEu4dozIV8xcdqA2EvRv1vRhxleLUwKS9IesTtJdP7m3AICA.xZd2d2h1wLSMdmrF4yJQKQ/__results___files/__results___10_1.png">
+<img align="center" width="400" height="300" src="https://deeplearning.cms.waikato.ac.nz/img/iris.png">
 
 ## References
 
