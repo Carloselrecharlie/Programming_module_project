@@ -61,6 +61,9 @@ With another useful seaborn plot, the pairplot, they show the bivariate relation
 
 <img align="center" width="400" height="300" src="https://deeplearning.cms.waikato.ac.nz/img/iris.png">
 
+**4. The Iris data set**
+
+
 ## References
 
 Source | Link
@@ -69,6 +72,7 @@ Wiki intro | https://en.wikipedia.org/wiki/Iris_flower_data_set
 Article 1 | https://medium.com/codebagng/basic-analysis-of-the-iris-data-set-using-python-2995618a6342
 Article 2 |  http://patrickhoey.com/downloads/Computer_Science/03_Patrick_Hoey_Data_Visualization_Dataset_paper.pdf 
 Article 3 | https://www.kaggle.com/uciml/iris
+*Scatter plot adaptation | https://pythonspot.com/matplotlib-scatterplot/ 
 
 
 
