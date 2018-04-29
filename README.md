@@ -61,7 +61,33 @@ With another useful seaborn plot, the pairplot, they show the bivariate relation
 
 <img align="center" width="400" height="300" src="https://deeplearning.cms.waikato.ac.nz/img/iris.png">
 
-2. 
+## 2. My analysis 
+
+With the script data&param.py I outputed some statistical parameters which are shown in the table below:
+
+![Results table](\images\resultsTable.PNG)
+
+
+<img src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/exBoxPlot.png" style="float: left;" style="float: left;">
+<img src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/exViolPlot.png" style="float: left;">
+
+This study uses two approches, scatterplot graphs and programming to find patterns and draw some conclusions. For the graphs it compares every numerical variable with every classification of flower, giving a different color to each of the three flower classes. This way it is easy to sort the flower varieties from shorter to longer measurements and then, build a predictor for a particular classification
+of Iris flowers:
+  * If the Iris flower has a long sepal (6-8cm), long petals (5-7cm) and wide petals (1.5-2.5cm) then the Iris is most likely an Iris-Virginica. 
+  * If the Iris flower has a short sepal (4.5-5.5cm), short petals(1-2cm) and very narrow petals (.1-.5cm) then the Iris is most likely an Iris-Setosa. 
+  * Any Iris flower that falls in between these two classifications is most likely an Iris-Versicolor.
+They also make a Java script to get statistical parameters like mean, mode, median, range, variance, standard deviation, minimum value and maximum values.
+
+<img src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/petal_L-W.png">
+<img src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/sepal_L-W.png" style="float: left;">
+
+
+This study uses two approches, scatterplot graphs and programming to find patterns and draw some conclusions. For the graphs it compares every numerical variable with every classification of flower, giving a different color to each of the three flower classes. This way it is easy to sort the flower varieties from shorter to longer measurements and then, build a predictor for a particular classification
+of Iris flowers:
+  * If the Iris flower has a long sepal (6-8cm), long petals (5-7cm) and wide petals (1.5-2.5cm) then the Iris is most likely an Iris-Virginica. 
+  * If the Iris flower has a short sepal (4.5-5.5cm), short petals(1-2cm) and very narrow petals (.1-.5cm) then the Iris is most likely an Iris-Setosa. 
+  * Any Iris flower that falls in between these two classifications is most likely an Iris-Versicolor.
+They also make a Java script to get statistical parameters like mean, mode, median, range, variance, standard deviation, minimum value and maximum values.
 
 ## References
 
@@ -80,24 +106,3 @@ Article 3 | https://www.kaggle.com/uciml/iris
 
 
 
-
-=======
-
-Final project about the popular Iris flower data set for the Programming and Scripting module
-
-Based on the combination of the four features shown in the set, Fisher developed a linear discriminant model to distinguish the species from each other.
-
-Statistical Analysis http://patrickhoey.com/downloads/Computer_Science/03_Patrick_Hoey_Data_Visualization_Dataset_paper.pdf
-The goal a this discriminant analysis like this is to produce a simple function that, given the four measurements, will
-classify a flower correctly. This is the beginning of creating “predictors” in order to try to make a more educated guess 
-on a record in a dataset.
-
-matplotlib.pyplot and plots http://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html
-
-video scikit-learn https://www.youtube.com/watch?v=hd1W4CyPX58
-
-Basic Analysis of the Iris Data set Using Python https://medium.com/codebagng/basic-analysis-of-the-iris-data-set-using-python-2995618a6342 
-
-Python - IRIS Data visualization and explanation https://www.kaggle.com/abhishekkrg/python-iris-data-visualization-and-explanation 
-
-Iris Data Set, Machine learning,  Install SciPy Libraries https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
