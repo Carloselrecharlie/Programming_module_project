@@ -169,7 +169,7 @@ plt.title('SEPAL')
 plt.xlabel('length (cm)')
 plt.ylabel('width (cm)')
 plt.legend(loc=2)
-#plt.show()
+plt.show()
 
 
 # relation between petal length and petal width
