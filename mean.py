@@ -33,5 +33,15 @@ with open('data/iris.csv', newline='') as csvFile:
   print('The sepal width mean is ', "{0:.2f}".format(B/count), "cm")
   print('The petal length mean is ', "{0:.2f}".format(C/count), "cm")
   print('The petal width mean is ', "{0:.2f}".format(D/count), "cm")
+print()
 
+"""
+Sample of output from this script:
+
+The sepal length mean is  5.84 cm
+The sepal width mean is  3.05 cm
+The petal length mean is  3.76 cm
+The petal width mean is  1.20 cm
+
+"""
   

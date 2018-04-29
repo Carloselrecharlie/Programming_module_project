@@ -27,9 +27,9 @@ There also are three python files:
 * mean.py short script where I calculated the mean 
 ```
 
-## Articles
+##1. Articles
 
-**1. Basic Analysis of the Iris Data set Using Python**
+**1.1 Basic Analysis of the Iris Data set Using Python**
 
 In this research, they load and then explore the data with *pandas* using both descriptive statistics and data visualization. After a quick checkout of the data they take boxplots and histograms. Then, through scatterplots they find a diagonal relationship of some pair of attributes, which suggests a high correltaion and a predictable relationship. Then they create a validation set for this dataset by splitting the data into two:
    
@@ -42,7 +42,7 @@ After that they test some linear and non-linear algorithms to know which one is 
 
 The accuracy is 90%. The confusion matrix provides an indication of the three errors made. Finally, the classification report provides a breakdown of each class by precision showing excellent results (granted the validation dataset was small).
 
-**2. Statistical Analysis of the Iris Flower Dataset** 
+**1.2 Statistical Analysis of the Iris Flower Dataset** 
 
 This study uses two approches, scatterplot graphs and programming to find patterns and draw some conclusions. For the graphs it compares every numerical variable with every classification of flower, giving a different color to each of the three flower classes. This way it is easy to sort the flower varieties from shorter to longer measurements and then, build a predictor for a particular classification
 of Iris flowers:
@@ -51,7 +51,7 @@ of Iris flowers:
   * Any Iris flower that falls in between these two classifications is most likely an Iris-Versicolor.
 They also make a Java script to get statistical parameters like mean, mode, median, range, variance, standard deviation, minimum value and maximum values.
 
-**3. Python Data Visualizations**
+**1.3 Python Data Visualizations**
 
 Using 3 libraries in the study (pandas, matplotlib and seaborn) they do things like joinning and summarizing two graphs into a single violin plot, which combines the benefits of a box plot with a layer of spots that shows every measurement. Denser regions of the data are fatter, and sparser thiner in a violin plot
 
@@ -61,8 +61,7 @@ With another useful seaborn plot, the pairplot, they show the bivariate relation
 
 <img align="center" width="400" height="300" src="https://deeplearning.cms.waikato.ac.nz/img/iris.png">
 
-**4. The Iris data set**
-
+2. 
 
 ## References
 

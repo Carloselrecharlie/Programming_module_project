@@ -23,11 +23,35 @@ with open('data/iris.csv', newline='') as csvFile:
 
 data = np.genfromtxt('data/iris.csv', delimiter = ',')
 
+# defining VARIABLES
+# column variables
+col1 = data[:,0]
+col2 = data[:,1]
+col3 = data[:,2]
+col4 = data[:,3]
+
+# flower class variables
+setSL = data[0:50,0]
+setSW = data[0:50,1]
+setPL = data[0:50,2]
+setPW = data[0:50,3]
+
+verSL = data[51:100,0]
+verSW = data[51:100,1]
+verPL = data[51:100,2]
+verPW = data[51:100,3]
+
+virSL = data[101:150,0]
+virSW = data[101:150,1]
+virPL = data[101:150,2]
+virPW = data[101:150,3]
+
+
 # Parameters from the file ingnoring flower classes. Means:
-meancol1 = np.mean(data[:,0])
-meancol2 = np.mean(data[:,1])
-meancol3 = np.mean(data[:,2])
-meancol4 = np.mean(data[:,3])
+meancol1 = np.mean(col1)
+meancol2 = np.mean(col2)
+meancol3 = np.mean(col3)
+meancol4 = np.mean(col4)
 
 print('sep_len  sep_wid  pet_len  pet_wid (cm)')
 print()
@@ -37,10 +61,10 @@ print("MEANS (cm)")
 print('  '+ '{0:.2f}'.format(meancol1) + "     " + '{0:.2f}'.format(meancol2) + "     " + '{0:.2f}'.format(meancol3) + "     " + '{0:.2f}'.format(meancol4))
 
 # Medians
-mediancol1 = np.median(data[:,0])
-mediancol2 = np.median(data[:,1])
-mediancol3 = np.median(data[:,2])
-mediancol4 = np.median(data[:,3])
+mediancol1 = np.median(col1)
+mediancol2 = np.median(col2)
+mediancol3 = np.median(col3)
+mediancol4 = np.median(col4)
 
 print()
 print("MEDIANS (cm)")
@@ -48,20 +72,20 @@ print('  '+ '{0:.2f}'.format(mediancol1) + "     " + '{0:.2f}'.format(mediancol2
 print()
 
 # modes 
-modecol1 = stats.mode(data[:,0])
-modecol2 = stats.mode(data[:,1])
-modecol3 = stats.mode(data[:,2])
-modecol4 = stats.mode(data[:,3])
+modecol1 = stats.mode(col1)
+modecol2 = stats.mode(col2)
+modecol3 = stats.mode(col3)
+modecol4 = stats.mode(col4)
 
 print('MODES (cm) (sep_len  sep_wid  pet_len  pet_wid)') # The second attribute, count, is the number of times it occurs in the data set.
 print("", modecol1, "\n", modecol2, "\n", modecol3, "\n", modecol4)
 print()
 
 # maximums
-maxCol1= np.amax(data[:,0])
-maxCol2= np.amax(data[:,1])
-maxCol3= np.amax(data[:,2])
-maxCol4= np.amax(data[:,3])
+maxCol1= np.amax(col1)
+maxCol2= np.amax(col2)
+maxCol3= np.amax(col3)
+maxCol4= np.amax(col4)
 
 print('MAXIMUMS (cm)')
 print("  ", maxCol1, "    ", maxCol2, "    ", maxCol3, "    ", maxCol4)
@@ -70,23 +94,32 @@ print(' sep_len  sep_wid  pet_len  pet_wid (cm)')
 print()
 
 # minimums
-minCol1= np.amin(data[:,0])
-minCol2= np.amin(data[:,1])
-minCol3= np.amin(data[:,2])
-minCol4= np.amin(data[:,3])
+minCol1= np.amin(col1)
+minCol2= np.amin(col2)
+minCol3= np.amin(col3)
+minCol4= np.amin(col4)
 
 print('MINIMUMS (cm)')
 print("  ", minCol1, "    ", minCol2, "    ", minCol3, "    ", minCol4)
 print()
 
 # standard deviation
-stdcol1 = np.std(data[:,0])
-stdcol2 = np.std(data[:,1])
-stdcol3 = np.std(data[:,2])
-stdcol4 = np.std(data[:,3])
+stdcol1 = np.std(col1)
+stdcol2 = np.std(col2)
+stdcol3 = np.std(col3)
+stdcol4 = np.std(col4)
 
 print("STANDARD DEVIATIONS (cm)")
 print('   '+ '{0:.2f}'.format(stdcol1) + "     " + '{0:.2f}'.format(stdcol2) + "     " + '{0:.2f}'.format(stdcol3) + "     " + '{0:.2f}'.format(stdcol4))
+print()
+
+# correlation coefficient between leaf length and width 
+corCcol1_2 = np.corrcoef(col1, col2)[1,0] # [1,0] added to obtain just one value
+corCcol3_4 = np.corrcoef(col3, col4)[1,0]
+
+print('CORRELATION COEFFICITENT')
+print(' - Between sepal length and sepal width', '{0:.2f}'.format(corCcol1_2))
+print(' - Between petal length and petal width', '{0:.2f}'.format(corCcol3_4))
 print()
 print()
 
@@ -94,21 +127,21 @@ print()
 print("2) PARAMETERS taken out of the file data CONSIDERING the flower classes:")
 
 # means by flower class: sepal length
-meanSetSL= np.mean(data[0:50,0])
-meanVerSL= np.mean(data[51:100,0])
-meanVirSL= np.mean(data[101:150,0])
+meanSetSL= np.mean(setSL)
+meanVerSL= np.mean(verSL)
+meanVirSL= np.mean(virSL)
 # means sepal width
-meanSetSW= np.mean(data[0:50,1])
-meanVerSW= np.mean(data[51:100,1])
-meanVirSW= np.mean(data[101:150,1])
+meanSetSW= np.mean(setSW)
+meanVerSW= np.mean(verSW)
+meanVirSW= np.mean(virSW)
 # means petal length
-meanSetPL= np.mean(data[0:50,2])
-meanVerPL= np.mean(data[51:100,2])
-meanVirPL= np.mean(data[101:150,2])
+meanSetPL= np.mean(setPL)
+meanVerPL= np.mean(verPL)
+meanVirPL= np.mean(virPL)
 # means petal width
-meanSetPW= np.mean(data[0:50,3])
-meanVerPW= np.mean(data[51:100,3])
-meanVirPW= np.mean(data[101:150,3])
+meanSetPW= np.mean(setPW)
+meanVerPW= np.mean(verPW)
+meanVirPW= np.mean(virPW)
 
 print()
 print('MEANS by flower class (cm)')
@@ -125,21 +158,21 @@ print('  sep_len  sep_wid  pet_len  pet_wid (cm)')
 
 
 # medians by flower class: sepal length
-medianSetSL= np.median(data[0:50,0])
-medianVerSL= np.median(data[51:100,0])
-medianVirSL= np.median(data[101:150,0])
+medianSetSL= np.median(setSL)
+medianVerSL= np.median(verSL)
+medianVirSL= np.median(virSL)
 # medians sepal width
-medianSetSW= np.median(data[0:50,1])
-medianVerSW= np.median(data[51:100,1])
-medianVirSW= np.median(data[101:150,1])
+medianSetSW= np.median(setSW)
+medianVerSW= np.median(verSW)
+medianVirSW= np.median(virSW)
 # medians petal length
-medianSetPL= np.median(data[0:50,2])
-medianVerPL= np.median(data[51:100,2])
-medianVirPL= np.median(data[101:150,2])
+medianSetPL= np.median(setPL)
+medianVerPL= np.median(verPL)
+medianVirPL= np.median(virPL)
 # medians petal width
-medianSetPW= np.median(data[0:50,3])
-medianVerPW= np.median(data[51:100,3])
-medianVirPW= np.median(data[101:150,3])
+medianSetPW= np.median(setPW)
+medianVerPW= np.median(verPW)
+medianVirPW= np.median(virPW)
 
 print()
 print('MEDIANS by flower class (cm)')
@@ -153,21 +186,21 @@ print("    ", medianVirSL, "    ", medianVirSW, "    ", medianVirPL, "    ", med
 print()
 
 # modes by flower class: sepal length 
-modeSetSL= stats.mode(data[0:50,0])
-modeVerSL= stats.mode(data[51:100,0])
-modeVirSL= stats.mode(data[101:150,0])
+modeSetSL= stats.mode(setSL)
+modeVerSL= stats.mode(verSL)
+modeVirSL= stats.mode(virSL)
 # modes sepal width
-modeSetSW= stats.mode(data[0:50,1])
-modeVerSW= stats.mode(data[51:100,1])
-modeVirSW= stats.mode(data[101:150,1])
+modeSetSW= stats.mode(setSW)
+modeVerSW= stats.mode(verSW)
+modeVirSW= stats.mode(virSW)
 # modes petal length
-modeSetPL= stats.mode(data[0:50,2])
-modeVerPL= stats.mode(data[51:100,2])
-modeVirPL= stats.mode(data[101:150,2])
+modeSetPL= stats.mode(setPL)
+modeVerPL= stats.mode(verPL)
+modeVirPL= stats.mode(virPL)
 # modes petal width
-modeSetPW= stats.mode(data[0:50,3])
-modeVerPW= stats.mode(data[51:100,3])
-modeVirPW= stats.mode(data[101:150,3])
+modeSetPW= stats.mode(setPW)
+modeVerPW= stats.mode(verPW)
+modeVirPW= stats.mode(virPW)
 
 print()
 print('MODES by flower class (cm) (sep_len  sep_wid  pet_len  pet_wid)') # The second attribute, count, is the number of times it occurs in the data set.
@@ -183,21 +216,21 @@ print("", modeVirSL, "\n", modeVirSW, "\n", modeVirPL, "\n", modeVirPW)
 print()
 
 # maximum values by flower class: sepal length
-maxSetSL= np.amax(data[0:50,0])
-maxVerSL= np.amax(data[51:100,0])
-maxVirSL= np.amax(data[101:150,0])
+maxSetSL= np.amax(setSL)
+maxVerSL= np.amax(verSL)
+maxVirSL= np.amax(virSL)
 # maximums sepal width
-maxSetSW= np.amax(data[0:50,1])
-maxVerSW= np.amax(data[51:100,1])
-maxVirSW= np.amax(data[101:150,1])
+maxSetSW= np.amax(setSW)
+maxVerSW= np.amax(verSW)
+maxVirSW= np.amax(virSW)
 # maximums petal length
-maxSetPL= np.amax(data[0:50,2])
-maxVerPL= np.amax(data[51:100,2])
-maxVirPL= np.amax(data[101:150,2])
+maxSetPL= np.amax(setPL)
+maxVerPL= np.amax(verPL)
+maxVirPL= np.amax(virPL)
 # maximums petal width
-maxSetPW= np.amax(data[0:50,3])
-maxVerPW= np.amax(data[51:100,3])
-maxVirPW= np.amax(data[101:150,3])
+maxSetPW= np.amax(setPW)
+maxVerPW= np.amax(verPW)
+maxVirPW= np.amax(virPW)
 
 print()
 print('MAXIMUMS by flower class (cm)')
@@ -212,21 +245,21 @@ print()
 print(' sep_len  sep_wid  pet_len  pet_wid (cm)')
 
 # minimum values by flower class: sepal length
-minSetSL= np.amin(data[0:50,0])
-minVerSL= np.amin(data[51:100,0])
-minVirSL= np.amin(data[101:150,0])
+minSetSL= np.amin(setSL)
+minVerSL= np.amin(verSL)
+minVirSL= np.amin(virSL)
 # minimums sepal width
-minSetSW= np.amin(data[0:50,1])
-minVerSW= np.amin(data[51:100,1])
-minVirSW= np.amin(data[101:150,1])
+minSetSW= np.amin(setSW)
+minVerSW= np.amin(verSW)
+minVirSW= np.amin(virSW)
 # minimums petal length
-minSetPL= np.amin(data[0:50,2])
-minVerPL= np.amin(data[51:100,2])
-minVirPL= np.amin(data[101:150,2])
+minSetPL= np.amin(setPL)
+minVerPL= np.amin(verPL)
+minVirPL= np.amin(virPL)
 # minimums petal width
-minSetPW= np.amin(data[0:50,3])
-minVerPW= np.amin(data[51:100,3])
-minVirPW= np.amin(data[101:150,3])
+minSetPW= np.amin(setPW)
+minVerPW= np.amin(verPW)
+minVirPW= np.amin(virPW)
 
 print()
 print('MINIMUMS by flower class (cm)')
@@ -240,21 +273,21 @@ print("  ", minVirSL, "    ", minVirSW, "    ", minVirPL, "    ", minVirPW)
 print()
 
 # standard deviations by flower class: sepal length
-stdSetSL= np.std(data[0:50,0])
-stdVerSL= np.std(data[51:100,0])
-stdVirSL= np.std(data[101:150,0])
+stdSetSL= np.std(setSL)
+stdVerSL= np.std(verSL)
+stdVirSL= np.std(virSL)
 # standard deviations sepal width
-stdSetSW= np.std(data[0:50,1])
-stdVerSW= np.std(data[51:100,1])
-stdVirSW= np.std(data[101:150,1])
+stdSetSW= np.std(setSW)
+stdVerSW= np.std(verSW)
+stdVirSW= np.std(virSW)
 # standard deviations petal length
-stdSetPL= np.std(data[0:50,2])
-stdVerPL= np.std(data[51:100,2])
-stdVirPL= np.std(data[101:150,2])
+stdSetPL= np.std(setPL)
+stdVerPL= np.std(verPL)
+stdVirPL= np.std(virPL)
 # standard deviations petal width
-stdSetPW= np.std(data[0:50,3])
-stdVerPW= np.std(data[51:100,3])
-stdVirPW= np.std(data[101:150,3])
+stdSetPW= np.std(setPW)
+stdVerPW= np.std(verPW)
+stdVirPW= np.std(virPW)
 
 print()
 print('STANDARD DEVIATIONS by flower class (cm)')
@@ -269,3 +302,83 @@ print('   '+ '{0:.2f}'.format(stdVerSL) + "     " + '{0:.2f}'.format(stdVerSW) +
 print('Iris Virginica')
 print('   '+ '{0:.2f}'.format(stdVirSL) + "     " + '{0:.2f}'.format(stdVirSW) + "     " + '{0:.2f}'.format(stdVirPL) + "     " + '{0:.2f}'.format(stdVirPW))
 print()
+
+# Correlation coefficient between length and width flower leaf 
+setCorSepal = np.corrcoef(setSL, setSW)[1,0]
+setCorPetal = np.corrcoef(setPL, setPW)[1,0]
+
+verCorSepal = np.corrcoef(verSL, verSW)[1,0]
+verCorPetal = np.corrcoef(verPL, verPW)[1,0]
+
+virCorSepal = np.corrcoef(virSL, virSW)[1,0]
+virCorPetal = np.corrcoef(virPL, virPW)[1,0]
+
+print('The correlation coefficient between length and leaf from every leaf from every flower is:')
+print()
+print(' - setosa sepal', '{0:.2f}'.format(setCorSepal))
+print(' - setosa petal', '{0:.2f}'.format(setCorPetal))
+print()
+print(' - versicolor sepal', '{0:.2f}'.format(verCorSepal))
+print(' - versicolor petal', '{0:.2f}'.format(verCorPetal))
+print()
+print(' - virginica sepal', '{0:.2f}'.format(virCorSepal))
+print(' - virginica petal', '{0:.2f}'.format(virCorPetal))
+print()
+
+"""
+Sample of output from this code:
+
+  5.8      2.7      5.1      1.9
+  6.8      3.2      5.9      2.3
+  6.7      3.3      5.7      2.5
+  6.7      3.0      5.2      2.3
+  6.3      2.5      5.0      1.9
+  6.5      3.0      5.2      2.0
+  6.2      3.4      5.4      2.3
+  5.9      3.0      5.1      1.8
+sep_len  sep_wid  pet_len  pet_wid (cm)
+
+1) PARAMETERS taken out of the file data IGNORING the flower classes:
+
+MEANS (cm)
+  5.84     3.05     3.76     1.20
+
+MEDIANS (cm)
+  5.80     3.00     4.35     1.30
+
+MODES (cm) (sep_len  sep_wid  pet_len  pet_wid)
+ ModeResult(mode=array([ 5.]), count=array([10]))
+ ModeResult(mode=array([ 3.]), count=array([26]))
+ ModeResult(mode=array([ 1.5]), count=array([14]))
+ ModeResult(mode=array([ 0.2]), count=array([28]))
+
+MAXIMUMS (cm)
+   7.9      4.4      6.9      2.5
+
+ sep_len  sep_wid  pet_len  pet_wid (cm)
+
+MINIMUMS (cm)
+   4.3      2.0      1.0      0.1
+
+STANDARD DEVIATIONS (cm)
+   0.83     0.43     1.76     0.76
+
+CORRELATION COEFFICITENT
+ - Between sepal length and sepal width -0.11
+ - Between petal length and petal width 0.96
+
+
+2) PARAMETERS taken out of the file data CONSIDERING the flower classes:
+
+MEANS by flower class (cm)
+
+Iris Setosa
+    5.01     3.42     1.46     0.24
+Iris Versicolor
+    5.91     2.76     4.25     1.32
+Iris Virginica
+    6.59     2.97     5.54     2.02
+
+  sep_len  sep_wid  pet_len  pet_wid (cm)
+
+  """
