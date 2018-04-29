@@ -3,7 +3,7 @@ Final project about the popular Iris flower data set for the Programming and Scr
 
 Known as *Fisher's Iris data set* and being multivariate, this set was introduced by the British statistician and biologist **Ronald Fisher** in his 1936 paper *The use of multiple measurements in taxonomic problems* as an example of linear discriminant analysis. It is sometimes called *Anderson's Iris data set* because Edgar Anderson collected the data to quantify the morphologic variation of Iris flowers of three related species. Two out of the three species were collected in the Gaspé Peninsula "all from the same pasture, and picked on the same day and measured at the same time by the same person with the same apparatus".
 
-<img align="left" width="150" height="170" src="http://s5047.pcdn.co/wp-content/uploads/2015/04/iris_petal_sepal.png" alt"sample iris flower">
+<img align="left" width="150" height="170" src="http://s5047.pcdn.co/wp-content/uploads/2015/04/iris_petal_sepal.png" alt="sample iris flower">
 
 The data set consists of 50 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). Four features were measured from each sample: the length and the width of the sepals and petals, in centimetres. Based on the combination of these four features, Fisher developed a linear discriminant model to distinguish the species from each other.
 
@@ -74,8 +74,8 @@ of Iris flowers:
   * Any Iris flower that falls in between these two classifications is most likely an Iris-Versicolor.
 They also make a Java script to get statistical parameters like mean, mode, median, range, variance, standard deviation, minimum value and maximum values.
 
-<img src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/exBoxPlot.png" style="float:left;width:360px;" alt="example box plot">
-<img src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/exViolPlot.png" style="float:left;width:360px;" alt="example violin plot">
+<img align="left" width="400" src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/exBoxPlot.png" alt="example box plot">
+<img align="left" width="400" src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/exViolPlot.png"  alt="example violin plot">
 
 This study uses two approches, scatterplot graphs and programming to find patterns and draw some conclusions. For the graphs it compares every numerical variable with every classification of flower, giving a different color to each of the three flower classes. This way it is easy to sort the flower varieties from shorter to longer measurements and then, build a predictor for a particular classification
 of Iris flowers:
