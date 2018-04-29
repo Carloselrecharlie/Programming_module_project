@@ -3,7 +3,7 @@ Final project about the popular Iris flower data set for the Programming and Scr
 
 Known as *Fisher's Iris data set* and being multivariate, this set was introduced by the British statistician and biologist **Ronald Fisher** in his 1936 paper *The use of multiple measurements in taxonomic problems* as an example of linear discriminant analysis. It is sometimes called *Anderson's Iris data set* because Edgar Anderson collected the data to quantify the morphologic variation of Iris flowers of three related species. Two out of the three species were collected in the Gaspé Peninsula "all from the same pasture, and picked on the same day and measured at the same time by the same person with the same apparatus".
 
-<img align="left" width="150" height="170" src="http://s5047.pcdn.co/wp-content/uploads/2015/04/iris_petal_sepal.png">
+<img align="left" width="150" height="170" src="http://s5047.pcdn.co/wp-content/uploads/2015/04/iris_petal_sepal.png" alt"sample iris flower">
 
 The data set consists of 50 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). Four features were measured from each sample: the length and the width of the sepals and petals, in centimetres. Based on the combination of these four features, Fisher developed a linear discriminant model to distinguish the species from each other.
 
@@ -55,17 +55,17 @@ They also make a Java script to get statistical parameters like mean, mode, medi
 
 Using 3 libraries in the study (pandas, matplotlib and seaborn) they do things like joinning and summarizing two graphs into a single violin plot, which combines the benefits of a box plot with a layer of spots that shows every measurement. Denser regions of the data are fatter, and sparser thiner in a violin plot
 
-<img src = "https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/violinPlot.png">
+<img width="350" src = "https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/violinPlot.png" alt="violin plot">
 
 With another useful seaborn plot, the pairplot, they show the bivariate relation between each pair of features and also that the Iris-setosa species is separataed from the other two across all feature combinations
 
-<img align="center" width="400" height="300" src="https://deeplearning.cms.waikato.ac.nz/img/iris.png" width = "300">
+<img align="center" width="400" height="300" src="https://deeplearning.cms.waikato.ac.nz/img/iris.png" width = "300" alt="pair plot">
 
 ## 2. My analysis 
 
 With the script data&param.py I outputed some statistical parameters which are shown in the table below:
 
-<img src = "https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/resultsTable.PNG">
+<img src = "https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/resultsTable.PNG" alt="results table">
 
 This study uses two approches, scatterplot graphs and programming to find patterns and draw some conclusions. For the graphs it compares every numerical variable with every classification of flower, giving a different color to each of the three flower classes. This way it is easy to sort the flower varieties from shorter to longer measurements and then, build a predictor for a particular classification
 of Iris flowers:
@@ -74,8 +74,8 @@ of Iris flowers:
   * Any Iris flower that falls in between these two classifications is most likely an Iris-Versicolor.
 They also make a Java script to get statistical parameters like mean, mode, median, range, variance, standard deviation, minimum value and maximum values.
 
-<img src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/exBoxPlot.png" style="float:left;width:360px;">
-<img src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/exViolPlot.png" style="float:left;width:360px;">
+<img src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/exBoxPlot.png" style="float:left;width:360px;" alt="example box plot">
+<img src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/exViolPlot.png" style="float:left;width:360px;" alt="example violin plot">
 
 This study uses two approches, scatterplot graphs and programming to find patterns and draw some conclusions. For the graphs it compares every numerical variable with every classification of flower, giving a different color to each of the three flower classes. This way it is easy to sort the flower varieties from shorter to longer measurements and then, build a predictor for a particular classification
 of Iris flowers:
@@ -84,8 +84,8 @@ of Iris flowers:
   * Any Iris flower that falls in between these two classifications is most likely an Iris-Versicolor.
 They also make a Java script to get statistical parameters like mean, mode, median, range, variance, standard deviation, minimum value and maximum values.
 
-<img src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/petal_L-W.png" style="float:left;width:500px;">
-<img src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/sepal_L-W.png" style="float:left;width:500px;">
+<img src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/petal_L-W.png" style="float:left;width:500px;" alt="relation petal length-width">
+<img src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/sepal_L-W.png" style="float:left;width:500px;" alt="relation sepal length-width">
 
 
 This study uses two approches, scatterplot graphs and programming to find patterns and draw some conclusions. For the graphs it compares every numerical variable with every classification of flower, giving a different color to each of the three flower classes. This way it is easy to sort the flower varieties from shorter to longer measurements and then, build a predictor for a particular classification
