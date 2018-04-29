@@ -73,6 +73,8 @@ We can compare this with the histograms plotted, who were intended to meet the s
 
 Most histograms have a piramid-like shape, which shows that the majority of the data is concentrated around certain figures in the middle of each plot. Although there are significant differences between flower classes, reason why the histograms that consider the whole data set are distorted and partially loose the characteristic shape (except the sepal width one, which ends up being balanced)
 
+<img src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/histGen.png" alt="general histogram">
+
 <img align="left" width="420" src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/exBoxPlot.png" alt="example box plot">
 <img align="left" width="420" src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/exViolPlot.png"  alt="example violin plot">
 
