@@ -74,15 +74,8 @@ of Iris flowers:
   * Any Iris flower that falls in between these two classifications is most likely an Iris-Versicolor.
 They also make a Java script to get statistical parameters like mean, mode, median, range, variance, standard deviation, minimum value and maximum values.
 
-<img align="left" width="400" src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/exBoxPlot.png" alt="example box plot">
-<img align="left" width="400" src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/exViolPlot.png"  alt="example violin plot">
-
-
-
-
-
-
-
+<img align="left" width="410" src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/exBoxPlot.png" alt="example box plot">
+<img align="left" width="410" src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/exViolPlot.png"  alt="example violin plot">
 
 This study uses two approches, scatterplot graphs and programming to find patterns and draw some conclusions. For the graphs it compares every numerical variable with every classification of flower, giving a different color to each of the three flower classes. This way it is easy to sort the flower varieties from shorter to longer measurements and then, build a predictor for a particular classification
 of Iris flowers:
