@@ -71,14 +71,20 @@ We can compare this with the histograms plotted, who were intended to meet the s
 
 <img src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/histFloCla.png" alt="histograms">
 
-Most histograms have a piramid-like shape, which shows that the majority of the data is concentrated around certain figures in the middle of each plot. Although there are significant differences between flower classes, reason why the histograms that consider the whole data set are distorted and partially loose the characteristic shape (except the sepal width one, which ends up being balanced)
+Most histograms have a piramid-like shape, which shows that the majority of the data is concentrated around certain figures in the middle of each plot. Even though some plots are similar between flower classes, other ones clash, reason why the histograms that consider the whole data set (see figure below) are distorted and partially loose their characteristic shape (except the sepal width one, which ends up being balanced).
 
 <img src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/histGen.png" alt="general histogram">
+
+And for that reason, the sepal length has such a high standard deviation (1.76), precisely for gathering a lot of data on the sides of the histogram.
+On the other hand, the correlation coefficient only shows some relation between sepal length and width in setosa class and between petal length and width in versicolor class.
+
+There are other plots like box plots, below on the left, and violin plots, next to the first. They are similar but the second offer more info since they add distribution of the sample data (density trace). The box plot is an old standby for visualizing basic distributions. It’s convenient for comparing summary statistics (such as range and quartiles), but it doesn’t let you see variations in the data. For multimodal distributions (those with multiple peaks) this can be particularly limiting. 
+
 
 <img align="left" width="420" src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/exBoxPlot.png" alt="example box plot">
 <img align="left" width="420" src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/exViolPlot.png"  alt="example violin plot">
 
-
+The scatter plots show a tidy relation between petal length and width, not far from being lineal, whereas when it comes to sepals there is not a clear relation, setosa is on one side and then versicolor and virginica mixed on the other side.
 
 <img align="left" width="420" src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/petal_L-W.png" alt="relation petal length-width">
 <img align="left" width="420" src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/sepal_L-W.png"  alt="relation sepal length-width">
@@ -95,7 +101,7 @@ Article 1 | https://medium.com/codebagng/basic-analysis-of-the-iris-data-set-usi
 Article 2 |  http://patrickhoey.com/downloads/Computer_Science/03_Patrick_Hoey_Data_Visualization_Dataset_paper.pdf 
 Article 3 | https://www.kaggle.com/uciml/iris
 *Scatter plot adaptation | https://pythonspot.com/matplotlib-scatterplot/ 
-
+Violin plots | https://blog.modeanalytics.com/violin-plot-examples/
 
 
 
