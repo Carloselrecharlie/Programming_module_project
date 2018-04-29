@@ -69,13 +69,13 @@ With the script data&param.py I outputed some statistical parameters which are s
 
 
 <img src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/histFloCla.png" alt="histograms">
-<img align="left" width="410" src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/exBoxPlot.png" alt="example box plot">
-<img align="left" width="410" src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/exViolPlot.png"  alt="example violin plot">
+<img align="left" width="415" src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/exBoxPlot.png" alt="example box plot">
+<img align="left" width="415" src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/exViolPlot.png"  alt="example violin plot">
 
 
 
-<img align="left" width="450" src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/petal_L-W.png" alt="relation petal length-width">
-<img align="left" width="450" src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/sepal_L-W.png"  alt="relation sepal length-width">
+<img align="left" width="415" src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/petal_L-W.png" alt="relation petal length-width">
+<img align="left" width="415" src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/sepal_L-W.png"  alt="relation sepal length-width">
 
 
 
