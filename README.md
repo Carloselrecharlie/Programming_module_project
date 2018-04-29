@@ -77,6 +77,8 @@ They also make a Java script to get statistical parameters like mean, mode, medi
 <img align="left" width="400" src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/exBoxPlot.png" alt="example box plot">
 <img align="left" width="400" src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/exViolPlot.png"  alt="example violin plot">
 
+<p style="clear: both;">
+
 This study uses two approches, scatterplot graphs and programming to find patterns and draw some conclusions. For the graphs it compares every numerical variable with every classification of flower, giving a different color to each of the three flower classes. This way it is easy to sort the flower varieties from shorter to longer measurements and then, build a predictor for a particular classification
 of Iris flowers:
   * If the Iris flower has a long sepal (6-8cm), long petals (5-7cm) and wide petals (1.5-2.5cm) then the Iris is most likely an Iris-Virginica. 
@@ -84,9 +86,10 @@ of Iris flowers:
   * Any Iris flower that falls in between these two classifications is most likely an Iris-Versicolor.
 They also make a Java script to get statistical parameters like mean, mode, median, range, variance, standard deviation, minimum value and maximum values.
 
-<img src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/petal_L-W.png" style="float:left;width:500px;" alt="relation petal length-width">
-<img src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/sepal_L-W.png" style="float:left;width:500px;" alt="relation sepal length-width">
+<img align="left" width="550" src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/petal_L-W.png" style="float:left;width:500px;" alt="relation petal length-width">
+<img align="left" width="550" src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/sepal_L-W.png"  alt="relation sepal length-width">
 
+<p style="clear: both;">
 
 This study uses two approches, scatterplot graphs and programming to find patterns and draw some conclusions. For the graphs it compares every numerical variable with every classification of flower, giving a different color to each of the three flower classes. This way it is easy to sort the flower varieties from shorter to longer measurements and then, build a predictor for a particular classification
 of Iris flowers:
