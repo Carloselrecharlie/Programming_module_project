@@ -27,7 +27,7 @@ There also are three python files:
 * mean.py short script where I calculated the mean 
 ```
 
-##1. Articles
+## 1. Articles
 
 **1.1 Basic Analysis of the Iris Data set Using Python**
 
@@ -55,7 +55,7 @@ They also make a Java script to get statistical parameters like mean, mode, medi
 
 Using 3 libraries in the study (pandas, matplotlib and seaborn) they do things like joinning and summarizing two graphs into a single violin plot, which combines the benefits of a box plot with a layer of spots that shows every measurement. Denser regions of the data are fatter, and sparser thiner in a violin plot
 
-![violinplot](\images\violinPlot.png)
+<img src = "https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/violinPlot.png">
 
 With another useful seaborn plot, the pairplot, they show the bivariate relation between each pair of features and also that the Iris-setosa species is separataed from the other two across all feature combinations
 
@@ -65,7 +65,7 @@ With another useful seaborn plot, the pairplot, they show the bivariate relation
 
 With the script data&param.py I outputed some statistical parameters which are shown in the table below:
 
-![Results table](\images\resultsTable.PNG)
+<img src = "https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/resultsTable.PNG">
 
 
 <img src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/exBoxPlot.png" style="float: left;" style="float: left;">
