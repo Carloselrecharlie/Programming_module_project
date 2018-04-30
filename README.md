@@ -63,33 +63,48 @@ With another useful seaborn plot, the pairplot, they show the bivariate relation
 
 ## 2. My analysis 
 
+### Data generated
 With the script data&param.py I outputed some statistical parameters which are shown in the table below:
 
+<p align="center">
 <img src = "https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/resultsTable.PNG" alt="results table">
+</P>
 
 We can compare this with the histograms plotted, who were intended to meet the same structure as the csv file:
 
+### Histograms
+(Both images are subplots)
+
 <img src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/histFloCla.png" alt="histograms">
 
-Most histograms have a piramid-like shape, which shows that the majority of the data is concentrated around certain figures in the middle of each plot. Even though some plots are similar between flower classes, other ones clash, reason why the histograms that consider the whole data set (see figure below) are distorted and partially loose their characteristic shape (except the sepal width one, which ends up being balanced).
+Most histograms have a piramid-like shape, which shows that the majority of the data is concentrated around certain figures in the middle of each plot. Each mean holds a value located at or close to the peak of this piramids, fact that shows that the samples are often similar and the different ones are found more often as they clash with the common ones. Then, it's no surprise the values of the means and the medians are quite similar, as well as the modes are a close enough match. Consequently, the standard deviation is relatively low, given this data accumulation around the center of the x axis.
+
+Even though some plots are similar when comparing the same measure between flower classes, others clash, reason why the histograms that consider the whole data set without paying attention to the flower classes (see figure below) are distorted and partially loose their characteristic shape (except the sepal width one, which ends up being balanced with the lowest standard deviation - 0.43 -).
 
 <img src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/histGen.png" alt="general histogram">
 
 And for that reason, the sepal length has such a high standard deviation (1.76), precisely for gathering a lot of data on the sides of the histogram.
-On the other hand, the correlation coefficient only shows some relation between sepal length and width in setosa class and between petal length and width in versicolor class.
+On the other hand, the correlation coefficient only shows some relation between sepal length and width in setosa class and between petal length and width in versicolor class. Again, leaving the flower class aside, there is a strong correlation between petal length and width, being both histograms quite similar.
 
-There are other plots like box plots, below on the left, and violin plots, next to the first. They are similar but the second offer more info since they add distribution of the sample data (density trace). The box plot is an old standby for visualizing basic distributions. It’s convenient for comparing summary statistics (such as range and quartiles), but it doesn’t let you see variations in the data. For multimodal distributions (those with multiple peaks) this can be particularly limiting. 
+### Box and violin plots
 
+There are other plots like box plots, below on the left, and violin plots, next to the first. They are similar but the second offers more info since they add distribution of the sample data (density trace). The following images are a comparison of both plots which were obtained from the first column, sepal length.
 
 <img align="left" width="420" src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/exBoxPlot.png" alt="example box plot">
 <img align="left" width="420" src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/exViolPlot.png"  alt="example violin plot">
 
-The scatter plots show a tidy relation between petal length and width, not far from being lineal, whereas when it comes to sepals there is not a clear relation, setosa is on one side and then versicolor and virginica mixed on the other side.
+ The addition to the violin plot of features like the median, interquartile range and 95% confidence interval is still pending.
+
+### Scatter plots
+
+These plots show a surprisingly tidy relation between petal length and width, not far from being lineal, whereas when it comes to sepals there is not a clear relation, setosa is on one side and then versicolor and virginica are mixed on the other side.
 
 <img align="left" width="420" src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/petal_L-W.png" alt="relation petal length-width">
 <img align="left" width="420" src="https://github.com/Carloselrecharlie/Programming_module_project/blob/master/images/sepal_L-W.png"  alt="relation sepal length-width">
 
+### Conclusion
 
+After a first glance at this data set I would say that what it represents seems to be consistent enough, nature attemps to obtain always a similar result with a common recipie. Although this is affected by environmental factors which lead to diversity.
 
 
 ## References
